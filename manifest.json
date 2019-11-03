@@ -1,0 +1,21 @@
+{
+
+  "manifest_version": 2,
+  "name": "Google Images Horizontal Preview",
+  "version": "1.0",
+  "author": "Syd Lambert",
+
+  "description": "Reverts the Google Images preview back to the old horizontal layout.",
+
+  "icons": {
+    "48": "icons/48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.google.com/*"],
+      "js": ["index.js"]
+    }
+  ]
+
+}
